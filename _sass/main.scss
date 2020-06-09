@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-4.003-GoogleFonts-TTF/poppins-regular-subset.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-4.003-GoogleFonts-TTF/poppins-semibold-subset.woff2") format("woff2");
+  font-weight: 600;
+}
+
+$body-size: 18px !default;
+.heading {
+  font-size: 1rem !important;
+}
+
+$family-primary: "Poppins", sans-serif;
+
+@import "../node_modules/bulma/bulma.sass";
+
+a {
+  color: inherit;
+}
+
+.is-long-text {
+  line-height: 2rem;
+  // text-align: justify;
+}
+
+.for-reading {
+  max-width: 40em;
+}
+
+.logo {
+  width: 10em;
+}
+
+.is-hyperlink {
+  color: #444;
+  font-size: 1em;
+
+  &:hover {
+    background: #f0f0ff;
+    font-size: 1em;
+    text-decoration: underline;
+  }
+
+  &:active {
+    background-color: #427fed;
+    color: #fffff6;
+    color: white;
+    font-size: 1em;
+  }
+
+  &.in-text-link {
+    text-decoration: underline;
+  }
+
+  &.with-icon {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media print {
+  .box {
+    page-break-inside: avoid;
+  }
+
+  .title {
+    page-break-after: avoid;
+  }
+}
+
+.with-help-cursor {
+  cursor: help;
+}
+
+.dont-break {
+  white-space: nowrap;
+}
+
+.is-footer-icon {
+  margin: 0.5rem;
+}
+
+.is-inline-image {
+  height: 1rem;
+}
+
+.nice-list {
+  li {
+    list-style-type: circle;
+    margin-bottom: 0.7rem;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+  }
+}
