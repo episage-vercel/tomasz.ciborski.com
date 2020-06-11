@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
+        function goToScreen(screenNumber) {
+            var element = document.getElementsByClassName("screen")[screenNumber];
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
+
+<div class="screens">
+    <div class="screen">
+        <div class="content">
+            <div class="huge-icon"><i class="far fa-calendar-check"></i></div>
+
+            <h2>Zarejestrowałeś się na badanie krwi</h2>
+            <p>
+                <div>Rezerwacja dla: Tomasz Ciborski</div>
+                <div>Email: tilosag@gmail.com</div>
+                <div>Data: 28-03-2019</div>
+                <div>Godzina: 14:30</div>
+            </p>
+            <h3>Adres do laboratorium</h3>
+            <p>
+                <div>ul. Kasprowicza 77</div>
+                <div>Wrocław</div>
+                <div>Telefon: 509 799 388</div>
+            </p>
+            <p>
+                Dodatkowy koszt zarezerowowania terminu pobrania krwi to 5zł. Płatne na miejscu.
+            </p>
+            <p class="controls-section">
+                <button type="button" class="next-button submit" onclick="window.print();">Wydrukuj &nbsp; <i class="fas fa-print"></i></button>
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,370 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script>
+        function goToScreen(screenNumber) {
+            var element = document.getElementsByClassName("screen")[screenNumber];
+            element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        }
+    </script>
+</head>
+
+<body>
+    <form ref='uploadForm' id='uploadForm' action='success.html' method='get' encType="multipart/form-data">
+        <div class="screens">
+            <!-- <div class="screen screen-1">
+                <div class="content">
+                    <h1 contenteditable="true" placeholder="Podaj nazwę usługi..."></h1>
+
+                    <p contenteditable="true" placeholder="Opisz usługę..."></p>
+                    <p class="controls-section">
+                        <button type="button" class="next-button" onclick="goToScreen(1)"><i
+                                class="fas fa-arrow-right"></i></button>
+                    </p>
+                </div>
+            </div> -->
+            <div class="screen screen-1">
+                <div class="content">
+                    <h1 class="welcome">Pobranie krwi w laboratorium</h1>
+
+                    <p>
+                        Koszt zarezerowowania terminu pobrania krwi to 5zł. Pacjent jest wtedy obsługiwany bez kolejki.
+                    </p>
+                    <p class="controls-section">
+                        <button type="button" class="next-button" onclick="goToScreen(1)"><i
+                                class="fas fa-arrow-right"></i></button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="screen screen-2">
+                <div class="content">
+                    <h2>
+                        Kiedy chcesz przyjść na pobranie krwi?
+                    </h2>
+                    <div>
+                        <!-- tutaj widok tygodnia z wszystkimi godzinami, strzalki w lewo w prawo o jeden dzien -->
+
+                        <div class="schedule">
+                            <div class="headers">
+                                <div class="go-left day-navigation-button"><i class="fas fa-arrow-left"></i></div>
+
+                                <div class="days">
+                                    <div class="day">
+                                        <span class="text">1 MARCA</span>
+                                    </div>
+                                    <div class="day">
+                                        <span class="text">2 MARCA</span>
+                                    </div>
+                                </div>
+                                <div class="go-right day-navigation-button"><i class="fas fa-arrow-right"></i></div>
+                            </div>
+                            <div class="body">
+                                <div class="go-left"></div>
+
+                                <div class="days">
+                                    <div class="day">
+                                        <div class="hour">
+                                            <label class="checked">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="day">
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label>
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:30</span>
+                                            </label>
+                                        </div>
+                                        <div class="hour">
+                                            <label class="disabled">
+                                                <input type="radio" name="17_30_21_may_2019" value="male">
+                                                <span>7:45</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="go-right"></div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <p class="controls-section">
+                        <button type="button" class="next-button" onclick="goToScreen(2)"><i
+                                class="fas fa-arrow-right"></i></button>
+                    </p>
+                </div>
+            </div>
+            <div class="screen screen-2">
+                <div class="content">
+                    <h2>
+                        Jak się nazywasz?
+                    </h2>
+                    <p>
+                        <label class="fancy-text-input">
+                            <input type="text" placeholder="&nbsp;">
+                            <span class="label">Imię i nazwisko</span>
+                        </label>
+                    </p>
+                    <p class="controls-section">
+                        <button type="button" class="next-button" onclick="goToScreen(3)"><i
+                                class="fas fa-arrow-right"></i></button>
+                    </p>
+                </div>
+            </div>
+            <div class="screen screen-2">
+                <div class="content">
+                    <h2>
+                        Jaki jest Twój email?
+                    </h2>
+                    <p>
+                        Na Twój adres email wyślemy potwierdzenie rezerwacji oraz zaproszenie dzięki któremu dodasz
+                        wizytę
+                        do swojego kalendarza
+                    </p>
+                    <p>
+                        <label class="fancy-text-input">
+                            <input type="email" placeholder="&nbsp;">
+                            <span class="label">Adres email</span>
+                        </label>
+                    </p>
+                    <p class="controls-section">
+                        <button type="button" class="next-button" onclick="goToScreen(4)"><i
+                                class="fas fa-arrow-right"></i></button>
+                    </p>
+                </div>
+            </div>
+            <div class="screen screen-2">
+                <div class="content">
+                    <h2>
+                        Podsumowanie
+                    </h2>
+                    <p>
+                        <div>Rezerwacja dla: Tomasz Ciborski</div>
+                        <div>Email: tilosag@gmail.com</div>
+                        <div>Data: 28-03-2019</div>
+                        <div>Godzina: 14:30</div>
+                    </p>
+
+                    <p class="controls-section">
+                        <button type="submit" class="next-button submit">Zarezerwuj</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

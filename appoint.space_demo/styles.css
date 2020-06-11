@@ -1,0 +1,192 @@
+html {
+  font-size: medium; }
+
+body {
+  /* font-family: georgia, times, serif; */
+  font-family: "Trebuchet MS", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  margin: 0 auto;
+  max-width: 40em;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0 1em;
+  color: #434343;
+  background-color: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1,
+h2,
+h3 {
+  line-height: 1.2; }
+
+input {
+  /* display: flex; */
+  /* margin: 1em; */
+  font-size: medium; }
+
+.next-button {
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background: #FC4855;
+  color: #fafafa; }
+  .next-button:active {
+    background: #fb1626; }
+  .next-button.submit {
+    padding: 0 2rem;
+    width: auto; }
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+  .screen .content {
+    width: 100%; }
+    .screen .content .controls-section {
+      text-align: right; }
+
+@keyframes ants {
+  to {
+    background-position: 100%; } }
+*[contenteditable="true"] {
+  cursor: text;
+  padding: 1px;
+  outline: none; }
+  *[contenteditable="true"]:focus {
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%) 0/0.6rem 0.6rem;
+    animation: ants 46s linear infinite;
+    padding: 0; }
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  color: #767676; }
+
+.schedule {
+  white-space: nowrap; }
+  .schedule .headers {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem; }
+  .schedule .headers,
+  .schedule .body {
+    display: grid;
+    grid-template-columns: 3rem 1fr 3rem;
+    grid-gap: 0;
+    grid-template-rows: 100%; }
+  .schedule .body {
+    max-height: 60vh;
+    overflow-y: scroll;
+    margin: 1rem 0; }
+  .schedule .go-left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2; }
+  .schedule .days {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    display: flex;
+    flex-direction: row; }
+    .schedule .days .day {
+      flex-grow: 1;
+      text-align: center; }
+  .schedule .headers {
+    background: #fafafa; }
+  .schedule .headers .day {
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+    .schedule .headers .day .text {
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      height: 2rem;
+      border-bottom: 0.1rem solid #434343; }
+  .schedule .go-right {
+    grid-column: 3;
+    grid-row: 1 / 2;
+    margin: 0 0 0 auto; }
+  .schedule .day-navigation-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-color: #434343;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    cursor: pointer; }
+    .schedule .day-navigation-button:hover {
+      color: #FC4855; }
+    .schedule .day-navigation-button:active {
+      color: #FC4855;
+      border-color: #FC4855; }
+
+.hour {
+  display: flex;
+  justify-content: center; }
+  .hour label {
+    cursor: pointer;
+    padding: 0.25rem 2rem;
+    margin: 0.75rem 0.5rem;
+    border: 0.1em #ECEBED solid;
+    border-radius: 0.5rem;
+    background: #FFFFFF; }
+    .hour label.checked {
+      background: #FC4855;
+      color: #fafafa; }
+    .hour label.disabled {
+      color: #ECEBED; }
+    .hour label input {
+      display: none;
+      cursor: pointer; }
+    .hour label span {
+      vertical-align: middle; }
+
+.fancy-text-input {
+  position: relative;
+  width: 100%; }
+  .fancy-text-input * {
+    cursor: text; }
+  .fancy-text-input .label {
+    position: absolute;
+    bottom: 0rem;
+    left: 0;
+    color: #9098a9;
+    transform-origin: 0 0;
+    transition: all 0.2s ease; }
+  .fancy-text-input input {
+    -webkit-appearance: none;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    margin-left: -0.5rem;
+    width: 100%;
+    border: 0;
+    height: 2rem;
+    border-bottom: 0.1rem solid #c8ccd4;
+    background: none;
+    border-radius: 0.5rem;
+    color: #434343;
+    transition: all 0.15s ease; }
+    .fancy-text-input input:not(:placeholder-shown) + span {
+      color: #5a667f;
+      transform: translateY(-1.5rem) scale(0.75); }
+    .fancy-text-input input:focus {
+      background: none;
+      outline: none;
+      border-bottom-color: #FC4855; }
+    .fancy-text-input input:focus + span {
+      color: #FC4855;
+      transform: translateY(-1.5rem) scale(0.75); }
+
+.huge-icon {
+  font-size: 10rem;
+  margin: -7rem 0 2rem 0;
+  color: #FC4855; }
+
+/*# sourceMappingURL=styles.css.map */
